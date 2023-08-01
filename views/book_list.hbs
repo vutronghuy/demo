@@ -1,0 +1,32 @@
+<h1>Book</h1>
+
+{{!-- //table>tr*3>th*5 --}}
+<table border="2">
+    <tr>
+        <th colspan="6">Book List</th>
+    </tr>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Date</th>
+        <th>Image</th>
+    </tr>
+    {{#each gch1103 }}
+         <tr>
+        <th>{{ title}}</th>
+        <th>{{author}}</th>
+        <th>{{price}}</th>
+        <th>{{quantity}}</th>
+        <th>{{date}}</th>
+        <th>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.hDbrAowRi6QOVPncUHgqvQHaKc&pid=Api&P=0&h=180" width="100", height="100">
+        </th>
+        <th> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video }}"></iframe>
+        </th>
+    </tr>
+    {{/each}}
+   
+</table>
